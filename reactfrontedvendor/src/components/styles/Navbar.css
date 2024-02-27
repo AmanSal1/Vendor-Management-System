@@ -1,0 +1,62 @@
+/* Navbar.css */
+nav {
+  background-color: #333;
+  padding: 10px;
+  margin-right: 470px;
+  margin-left: 470px;
+  margin-top: 10px;
+  z-index: 10001;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  position: relative;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7); /* Adjust alpha value for text transparency */
+  font-weight: bold;
+}
+
+a:hover {
+  color: #00bfff;
+}
+
+/* Dropdown styles */
+ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(51, 51, 51, 0.8  ); /* Adjust alpha value for transparency */
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+li:hover > ul {
+  display: block; /* Change to 'block' to make items stack vertically */
+}
+
+/* Adjust positioning for stacked dropdown items */
+li ul li {
+  display: block;
+  margin: 10px 0; /* Adjust spacing between stacked items */
+}
+.dropdown-menu {
+  position: absolute;
+  z-index: 10004;}
+
+
+.glow {
+  border: 2px solid transparent; /* Add a transparent border */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Apply a soft white glow */
+}

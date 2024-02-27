@@ -1,0 +1,57 @@
+/* TableComponent.css */
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure the table is positioned relative to its container */
+    z-index: 1; /* Ensure the table is on top of the black background */
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    color: white; /* Text color to contrast with black background */
+}
+
+.data-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.data-table td {
+    transition: background-color 0.3s ease;
+}
+
+.data-table tr:hover td {
+    background-color: #f9f9f9;
+}
+
+
+
+.bg-black {
+  background-color: black;
+  /* Add other desired styles */
+  /* For example, you can set padding to create space between the content and the edges of the container */
+  padding: 20px;
+  /* Set text color to white or any color that contrasts well with black */
+  color: white;
+}
+
+.data-table {
+  /* Set a higher z-index to ensure that the table is displayed on top of the black background */
+  z-index: 1;
+}
+
+.data-table th,
+.data-table td {
+  /* Set a background color and ensure text is visible */
+  background-color: white; /* or any color that contrasts well with black */
+  color: black; /* Ensure text is visible */
+  /* Add other desired styles */
+}
+
